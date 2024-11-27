@@ -66,7 +66,7 @@ two implications.
 
 - $$x\rightarrow (c_0=v_0 \land c_1=v_1 ...) \sim\neg x \vee (c_0 =v_0 \land c_1=v_1...) \sim (\neg x\vee cel_0=v_0) \land (\neg x \vee  c_1=v_1)$$
 - So we create multiple clauses with disjunction of negation of x and cells with given value
-- $ (c_0=v_0 \land c_1=v1 ...) \rightarrow x \sim \neg ($c_0=v_0 \land c_1=v1 ...) \lor x \sim \neg(c_0=v0) \lor \neg(c_1=v1) ... \lor x $
+- $(c_0=v_0 \land c_1=v1 ...) \rightarrow x \sim \neg ($c_0=v_0 \land c_1=v1 ...) \lor x \sim \neg(c_0=v0) \lor \neg(c_1=v1) ... \lor x$
 - So we create one clause with negation of each cell with given value and x
 
 See implementation for details. Then we just say that exactly one of those ways is right, similar to the way how we 
