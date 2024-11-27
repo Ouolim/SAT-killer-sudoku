@@ -64,9 +64,9 @@ Note that we take all use all permutations. Then we assign each of those ways a 
 equivalence of x and the cells in that cage have those exact numbers assigned to them. We split that equivalence to
 two implications.
 
-- $x-> (c_0=v_0 \land c_1=v_1 ...) \sim\neg x \vee (c_0 =v_0 \land c_1=v_1...) \sim (\neg x\vee cel_0=v_0) \land (\neg x \vee  c_1=v_1)$
+- $$x\rightarrow (c_0=v_0 \land c_1=v_1 ...) \sim\neg x \vee (c_0 =v_0 \land c_1=v_1...) \sim (\neg x\vee cel_0=v_0) \land (\neg x \vee  c_1=v_1)$$
 - So we create multiple clauses with disjunction of negation of x and cells with given value
-- $($ cell0 has v0 A cell1 has v1.....$) -> x$ ~ $\neg ($cel0 has v0 $\land$ cell1 has v1.....$) \lor x $~ $\neg($cell0 has v0$) \lor \neg($cell1 has v1) $\dots \lor x$
+- $(c_0 = v_0 A cell1 has v1.....$) -> x$ ~ $\neg ($cel0 has v0 $\land$ cell1 has v1.....$) \lor x $~ $\neg($cell0 has v0$) \lor \neg($cell1 has v1) $\dots \lor x$
 - So we create one clause with negation of each cell with given value and x
 
 See implementation for details. Then we just say that exactly one of those ways is right, similar to the way how we 
